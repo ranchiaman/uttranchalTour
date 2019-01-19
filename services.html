@@ -1,0 +1,428 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Theme Made By www.w3schools.com - No Copyright -->
+      <title>Uttaranchal Tourism</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!-- For social media links -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Google fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+      <!-- icons -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+      <style>
+
+      .well{
+        background-color:#fff;
+        /*color: #8B008B;*/
+        color:   #6c3483  ;
+        font-family:
+      }
+
+      .list-group-flush li{
+         color:#000;
+      }
+
+      #firstsection{
+         margin-top: 50px;
+      }
+
+         .container-fluid{
+             padding: 0;
+            margin: 0;
+         }
+
+         .nav-pills li{
+            font-weight: 600 !important;
+         }
+
+      /*footer social media*/
+          .fa {
+           padding: 20px;
+           font-size: 30px;
+           width: 70px;
+           text-align: center;
+           text-decoration: none;
+           margin: 5px 2px;
+           border-radius: 50%;
+         }
+
+         .fa:hover {
+             opacity: 0.7;
+         }
+
+         .fa-facebook {
+           background: #3B5998;
+           color: white;
+         }
+
+         .fa-twitter {
+           background: #55ACEE;
+           color: white;
+         }
+
+         .fa-google {
+           background: #dd4b39;
+           color: white;
+         }
+
+
+         .fa-youtube {
+           background: #bb0000;
+           color: white;
+         }
+
+         .fa-instagram {
+           background: #125688;
+           color: white;
+         }
+      /*footer end social media*/
+
+         body {
+         font: 400 15px/1.8 Lato, sans-serif;
+         color: /*#777*/;
+         text-align: justify;
+         font-family: 'Libre Baskerville', serif;
+         color: #fff;
+         background-color: #DCDCDC;
+         font-weight: 600;
+         }
+
+        
+        
+         .carousel-caption h3 {
+         color: #fff !important;
+         }
+         @media (max-width: 600px) {
+         .carousel-caption {
+         display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+         }
+         }
+         .bg-1 {
+         background: #2d2d30;
+         color: #bdbdbd;
+         }
+         .bg-1 h3 {color: #fff;}
+         .bg-1 p {font-style: italic;}
+         .list-group-item:first-child {
+         border-top-right-radius: 0;
+         border-top-left-radius: 0;
+         }
+         .list-group-item:last-child {
+         border-bottom-right-radius: 0;
+         border-bottom-left-radius: 0;
+         }
+         .thumbnail {
+         padding: 0 0 15px 0;
+         border: none;
+         border-radius: 0;
+         }
+         .thumbnail p {
+         margin-top: 15px;
+         color: #555;
+         }
+         .btn {
+         padding: 10px 20px;
+         background-color: #333;
+         color: #f1f1f1;
+         border-radius: 0;
+         transition: .2s;
+         }
+         .btn:hover, .btn:focus {
+         border: 1px solid #333;
+         background-color: #fff;
+         color: #000;
+         }
+         .modal-header, h4, .close {
+         background-color: #333;
+         color: #fff !important;
+         text-align: center;
+         font-size: 30px;
+         }
+         .modal-header, .modal-body {
+         padding: 40px 50px;
+         }
+         .nav-tabs li a {
+         color: #777;
+         }
+         #googleMap {
+         width: 100%;
+         height: 400px;
+         -webkit-filter: grayscale(100%);
+         filter: grayscale(100%);
+         }  
+         .navbar {
+         font-family: Montserrat, sans-serif;
+         margin-bottom: 0;
+         background-color: #2d2d30;
+         border: 0;
+         font-size: 11px !important;
+         letter-spacing: 4px;
+         /*opacity: 0.9;*/
+         }
+         .navbar li a, .navbar .navbar-brand { 
+         color: #fff !important;
+         font-size: 14px;
+         font-weight: bold;
+         }
+        /* .navbar-nav li a:hover {
+         color: #fff !important;
+         background-color: #428bca !important;
+         font-weight: 800;
+         font-size: 15px;
+         }*/
+         .navbar-nav li.active a {
+         color: #fff !important;
+         background-color: #29292c !important;
+         }
+         .navbar-default .navbar-toggle {
+         border-color: transparent;
+         }
+         .open .dropdown-toggle {
+         color: #fff;
+         background-color: #555 !important;
+         }
+         .dropdown-menu li a {
+         color: #000 !important;
+         }
+         .dropdown-menu li a:hover {
+         background-color: red !important;
+         }
+         footer {
+         background-color: #2d2d30;
+         color: #f5f5f5;
+         padding: 32px;
+         }
+         footer a {
+         color: #f5f5f5;
+         }
+         footer a:hover {
+         color: #777;
+         text-decoration: none;
+         }  
+         .form-control {
+         border-radius: 0;
+         }
+         textarea {
+         resize: none;
+         }
+
+         @media only screen and (max-width: 768px) {
+              ul {
+                text-align: center !important;
+            }
+        }
+      </style>
+   </head>
+   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" style="z-index: 999;">
+      <nav class="container navbar navbar-default navbar-fixed-top" style="background-color: #428BCA;">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>                        
+               </button>
+               <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" style="height: 45px; width: 45px; margin-top: -12px; "></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="chardham.html">CHARDHAM</a></li>
+                  <li class="active"><a href="services.html">SERVICES</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+                  <li><a href="donate.html">DONATE</a></li>
+                  <li><a href="review.html">REVIEW</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>  
+
+    <div class="container">
+      <div class="row" id="firstsection" style="padding-top:20px">
+        <div style="height: 35px;background-color: #428bca; margin:5px 15px; ">
+           <h2 class="text-center" style="font-weight: bold;">SERVICES</h2>   
+        </div>
+
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                <img src="assets/img/helicop.jpg" alt="Helicopter" style="height:auto;
+                  width: 100%;">
+              </div>
+              <div class="col-md-6">
+                <img src="assets/img/helicop1.jpg" alt="Helicopter" style="height:auto;
+                  width: 100%;">
+              </div>
+          </div>
+      </div>
+
+  <div class="container" style="padding-top: 20px;">
+    <div class="list-group">
+      <a class="list-group-item active">
+        <h3 class="list-group-item-heading">Chardham Yatra By Helicopter</h3>
+        
+      </a>
+      <a class="list-group-item">
+        <p class="list-group-item-text">Phata –Kedarnath -Phata: Rs. 7000 (inclusive of taxes) Per Passenger (Base Location May Change as per Helicopter Service Provider)</p>
+      </a>
+      <a class="list-group-item">
+        <p class="list-group-item-text">Dehradun -Chardham -Dehradun: Rs. 160000 (inclusive of taxes) per passenger </p>
+      </a>
+
+      <a class="list-group-item">
+        <p class="list-group-item-text">Dehradun –Kedarnath -Dehradun: Rs. 275000 (inclusive of taxes) for Four Passenger </p>
+      </a>
+
+      <a class="list-group-item">
+        <p class="list-group-item-text">Dehradun -Badrinath –Kedarnath-Dehradun: Rs. 375000 (inclusive of taxes) for Four Passenger </p>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- List -->
+
+    <div class="container">
+      <div class="well">The Company reserves the right, without assigning any reason, to cancel, advance, reschedule, over-fly or delay the commencement or continuance of the flight or after the stopping place or places or to deviate from the route of the journey or to change the type of aircraft in use without thereby incurring any liability in damages or otherwise to the passengers or any other person on any ground whatsoever. The Company reserves to itself the right to refuse to carry any person whom it considers unfit for travel or what in the opinion of the company may constitute risk to the aircraft or to the persons on board.</div>
+      <div class="well">For same day return you will be given 90 minutes at Sh. Kedarnath Ji.</div>
+      <div class="well"><h3>This Travel Document issued by the Company shall be subject to the rules of cancellation as follows :- </h3>
+        <ul>
+            <li>If PTD is cancelled ten days or above from the date of journey, 10% deduction shall be made.</li>
+            <li>If PTD is cancelled two days to nine days from the date of journey, 20% deduction shall be made.</li>
+            <li>If PTD is cancelled before 24 Hours from the journey date, 50% refund shall be made.</li>
+            <li>If PTD is cancelled less than 24 hours from the date of travel, passengers will be treated as ‘No Show’.‘No Show’ cases are not entitled to any refund.</li>
+            <li>If flight is cancelled by Helicopter Service Provider for technical reasons, passengers are entitled to full refund.</li>
+            <li>If flight is cancelled by Helicopter Service Provider due to bad weather, passengers are entitled to full refund. However, efforts shall be made to accommodate the passengers on the next date of flying, if possible.</li>
+            <li>IIn the case of a return ticket, if one leg of the journey is completed and the other leg is not completed either due to technical reasons or weather conditions, the passenger shall be entitled to refund of 50% of the ticket cost.</li>
+            <li>In no case the company is liable to provide accommodation to the passengers if the flight is not operated due to any reason.</li>
+            <li>Refund, if any will be made between 10 am to 4 pm only on producing the Original Receipt / PTD with Cancellation endorsement of Helicopter Service Provider’s Authorized Official. No Refunds are admissible on lost/photocopy of tickets or verbal approvals.</li>
+            <li>Tickets booked through the Agents shall be refunded to the Agents only.</li>
+        </ul>
+      </div>
+      <div class="well">Passengers are required to undergo Medical Checkup and Biometric registration or any other requirement for Kedarnath Yatra 2017. Government Uttarakhand has made suitable arrangement for this purpose.</div>
+
+      <div class="well">Passengers are requested to report at the departure heliport at the notified Reporting Time. Passengers reporting beyond this time shall be treated as ‘NO SHOW’ passengers and the Company reserves the right to allot the seat to other passenger.</div>
+
+      <div class="well">Senior citizens, VIPs, ladies, children, Chartered Passengers and physically handicapped passengers will have priority over all other passengers. Advanced booked passengers will have priority over spot booked passengers.</div>
+
+      <div class="well">Passengers are requested to follow all the safety instructions given at the helipad.</div>
+
+      <div class="well">item of explosive nature, sharp objects like knife, scissors, blades, screw drivers, match boxes, cigarette lighters, firearms, crackers etc. shall not be allowed on board. In case a passenger is carrying any firearm, he has to declare it before hand to the Pilots and deposit it with him along with the license. Photography is prohibited at Helipad & during flying.</div>
+
+      <div class="well">Children above the age of 2Yrs shall be charged full ticket. In case of dispute regarding age of children/infants, valid proof of age shall be the only deciding factor.</div>
+
+      <div class="well">Following documents are accepted as valid Photo IDs; Valid Passport / Valid Driving License / Election Photo ID /PAN Card / Photo ID issued by Govt./PSU and School Photo ID.</div>
+
+      <div class="well">Each passenger is permitted to carry only one handbag weighing not more than 02 Kgs.</div>
+
+      <div class="well">Reporting time is not to be confused with boarding time; boarding time may take place between 1 – 2 hours after the reporting time. Passengers are requested to check the reporting time from the company/their agents one day before the journey date.</div>
+
+      <div class="well">Effort will be made to accommodate passenger in their own group. However, due to weight, flight availability or weather conditions, it may not be possible to ensure this. Therefore, the passenger might have to travel alone in separate flights even if you are a part of a Group.</div>
+
+      <div class="well">The Minimum waiting period of passengers would be 2-3 hours but it may exceed to 3-4 hours as per the ground situation such as weather condition, time of refueling the helicopter or Non- Availability of passengers at either side.</div>
+
+      <div class="well">Operations subject to Govt. of Uttarakhand approval.</div>
+
+      <div class="well">Ticket issued against cheque payment is subject to realization of cheque.</div>
+
+      <div class="well">Passengers weighing more than 80 Kgs have to pay Rs.150/Kg as overweight charges on spot.</div>
+
+      <div class="well">Disputes, if any, are to be settled by Courts in Dehradun who will have the Jurisdiction in this regard.</div>
+
+      <div class="well">Terms & Conditions may vary from vendor to Vendor.</div>
+
+      <div class="well">Uttaranchal Tourism is a Subsdiary of M/s BrewData , Dehradun</div>
+
+      <div class="well">For Booking mail your details on bookings@uttaranchaltourism.org or Call us +91 8826366174</div>
+    </div>
+  <!-- End List -->
+
+    
+
+     
+         
+     
+      <!-- Footer -->
+      <div class="container">
+      <footer class="text-center" style="background-color: black;">
+      <div class="row">
+         <div class="col-md-4">
+            <table>
+               <tr>
+                  <td> <i class="material-icons" style="font-size:36px">location_on</i></td>
+                  <td>Uttaranchal Tourism<br>Dehradun</td>
+               </tr>
+               <tr>
+                  <td><i class="fa fa-mobile" style="font-size:36px"></i></td>
+                  <td>(+91) 880 0867 200</td>
+               </tr>
+            </table>
+         </div>
+
+         <div class="col-md-4">
+            <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+            </a><br>
+            <!-- Add font awesome icons -->
+            <a href="https://www.facebook.com/uttaranchaltourism/?__tn__=%2CdkC-R-R&eid=ARDyfmReuFBIQuzlu3dvLozrjkCqG-qyXvTGblw3-3054RUM9cyTyLgxTWjX8ZKSQJdm2Y31ijcFgjBp&hc_ref=ARSkSQYGuHRvYH6taTodiNpDlrCKMK6vceR73riCK1C0G2TjUX3K51hfzBAsWX4Ig60&fref=tag" class="fa fa-facebook"></a>
+
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+         </div>
+
+         <div class="col-md-4">
+            <i class="material-icons" style="font-size:36px">email</i><br>
+            bookings@uttaranchaltourism.org<br>
+            info@uttaranchaltourism.org
+         </div> 
+      </div><!-- row end -->
+
+      </footer>
+      </div>
+
+      <script>
+         $(document).ready(function(){
+           // Initialize Tooltip
+           $('[data-toggle="tooltip"]').tooltip(); 
+           
+           // Add smooth scrolling to all links in navbar + footer link
+           $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+         
+             // Make sure this.hash has a value before overriding default behavior
+             if (this.hash !== "") {
+         
+               // Prevent default anchor click behavior
+               event.preventDefault();
+         
+               // Store hash
+               var hash = this.hash;
+         
+               // Using jQuery's animate() method to add smooth page scroll
+               // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+               $('html, body').animate({
+                 scrollTop: $(hash).offset().top
+               }, 900, function(){
+            
+                 // Add hash (#) to URL when done scrolling (default click behavior)
+                 window.location.hash = hash;
+               });
+             } // End if
+           });
+         })
+      </script>
+   </body>
+</html>
+
